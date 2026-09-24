@@ -313,10 +313,12 @@ All merged PRs during a Wave cycle earn **Points** that convert to USDC via [Dri
 
 ## 🔗 Related
 
-- **Frontend** — [multisig-approval-frontend](https://github.com/sahmwel/moneyminded) (React dashboard)
+-## 🔗 Related
+
 - **Stellar SDK** — [stellar/js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
 - **Stellar Docs** — [developers.stellar.org](https://developers.stellar.org)
 - **Drips Wave** — [drips.network/wave/stellar](https://drips.network/wave/stellar)
+- **Stellar Laboratory** — [laboratory.stellar.org](https://laboratory.stellar.org) (for building transaction XDRs)
 
 <div align="center">
   <sub>Built for the Stellar ecosystem</sub>
