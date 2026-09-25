@@ -82,7 +82,7 @@ This project provides the **missing coordination layer**. It's not a wallet, not
 | Database | SQLite (`sqlite` + `sqlite3`) — PostgreSQL migration planned |
 | Stellar | `@stellar/stellar-sdk` |
 | Validation | Zod |
-| Testing | Jest + ts-jest |
+| Testing | Vitest |
 | CI | GitHub Actions |
 
 ---
@@ -208,7 +208,7 @@ multisig-approval-api/
 │   ├── services/                    # Business logic
 │   ├── validators/                  # Zod schemas
 │   └── utils/                       # Config helpers
-├── tests/                           # Jest test suite
+├── tests/                           # Vitest test suite
 ├── .github/workflows/ci.yml         # CI pipeline
 ├── dist/                            # Compiled JS (gitignored)
 ├── package.json
@@ -225,7 +225,7 @@ multisig-approval-api/
 | `npm run dev` | Dev server with auto-reload |
 | `npm run build` | Compile TypeScript to `dist/` |
 | `npm start` | Run production build |
-| `npm test` | Run Jest test suite |
+| `npm test` | Run Vitest test suite |
 | `npm run migrate` | Run DB migrations manually |
 
 ---
@@ -272,7 +272,7 @@ Tracked as GitHub issues (filter by `wave-9` label):
 npm test
 ```
 
-Tests use Jest with mocked database calls — no external services required.
+Tests use [Vitest](https://vitest.dev) with mocked database calls — no external services required.
 
 CI runs on every push and PR via [GitHub Actions](.github/workflows/ci.yml).
 
@@ -313,12 +313,10 @@ All merged PRs during a Wave cycle earn **Points** that convert to USDC via [Dri
 
 ## 🔗 Related
 
--## 🔗 Related
-
 - **Stellar SDK** — [stellar/js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
 - **Stellar Docs** — [developers.stellar.org](https://developers.stellar.org)
-- **Drips Wave** — [drips.network/wave/stellar](https://drips.network/wave/stellar)
 - **Stellar Laboratory** — [laboratory.stellar.org](https://laboratory.stellar.org) (for building transaction XDRs)
+- **Drips Wave** — [drips.network/wave/stellar](https://drips.network/wave/stellar)
 
 <div align="center">
   <sub>Built for the Stellar ecosystem</sub>
