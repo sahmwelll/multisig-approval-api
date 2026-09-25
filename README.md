@@ -241,8 +241,6 @@ multisig-approval-api/
 
 ## 🗺️ Roadmap
 
-Tracked as GitHub issues (filter by `wave-9` label):
-
 **Stellar-specific**
 - [ ] SEP-10 challenge/response wallet authentication
 - [ ] SEP-24 anchor integration for fiat on/off-ramp funding
@@ -284,12 +282,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for full guidance.
 
 **TL;DR:**
 
-1. Browse open issues (label: `wave-9`)
+1. Browse open issues
 2. Comment to claim one
 3. Fork, branch, implement, test
 4. Open a PR referencing the issue
-
-All merged PRs during a Wave cycle earn **Points** that convert to USDC via [Drips](https://drips.network).
 
 ---
 
@@ -316,7 +312,6 @@ All merged PRs during a Wave cycle earn **Points** that convert to USDC via [Dri
 - **Stellar SDK** — [stellar/js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
 - **Stellar Docs** — [developers.stellar.org](https://developers.stellar.org)
 - **Stellar Laboratory** — [laboratory.stellar.org](https://laboratory.stellar.org) (for building transaction XDRs)
-- **Drips Wave** — [drips.network/wave/stellar](https://drips.network/wave/stellar)
 
 <div align="center">
   <sub>Built for the Stellar ecosystem</sub>

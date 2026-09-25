@@ -1,24 +1,6 @@
 # Contributing to Multi-Sig Approval API
 
-Thank you for your interest in contributing! This project is part of the
-[Stellar Wave 9 Program](https://drips.network/wave/stellar) on [Drips](https://drips.network),
-where contributors earn **USDC rewards** for merged PRs.
-
----
-
-## 🌊 How the Wave Works
-
-1. **Browse open issues** — filter by the `wave-9` label.
-2. **Claim an issue** — comment "I'd like to work on this" on the GitHub issue. First come, first served.
-3. **Submit a PR** — before the Wave deadline.
-4. **Get reviewed & merged** — merged PRs earn **Points**, which convert to USDC at the end of the cycle.
-
-| Point Value | Type of Work |
-|-------------|--------------|
-| **200** | Standard features, tests, docs, small endpoints |
-| **400** | Larger features, integrations, complex refactors |
-| **600** | Cross-cutting concerns (security, auth, anchors) |
-| **800** | Full-stack / architectural mega-issues |
+Thank you for your interest in contributing! This is an open-source project and we welcome contributions of all kinds — bug fixes, new features, tests, documentation, and more.
 
 ---
 
@@ -26,7 +8,7 @@ where contributors earn **USDC rewards** for merged PRs.
 
 1. **Read the issue carefully.** Ask questions in the issue thread if anything is unclear.
 2. **Check for existing PRs.** If someone else is already working on it, pick a different issue.
-3. **Claim it publicly.** A short comment on the issue reserves it for you during that Wave.
+3. **Comment to claim it.** A short comment on the issue lets others know you're working on it.
 
 ---
 
@@ -35,7 +17,7 @@ where contributors earn **USDC rewards** for merged PRs.
 ### 1. Fork & clone
 
 ```bash
-git clone https://github.com/<your-username>/multisig-approval-api.git
+git clone https://github.com/sahmwelll/multisig-approval-api.git
 cd multisig-approval-api
 ```
 
@@ -69,8 +51,9 @@ git checkout -b feat/your-feature-name
 ### 5. Verify locally
 
 ```bash
-npm run build   # must compile without errors
-npm run dev     # smoke test
+npm run build    # must compile without errors
+npm test         # must pass all tests
+npm run dev      # smoke test
 ```
 
 ### 6. Commit
@@ -102,6 +85,7 @@ Open a PR against `main` with:
 Before submitting, confirm:
 
 - [ ] Code compiles (`npm run build` passes)
+- [ ] Tests pass (`npm test` passes)
 - [ ] Tests added or updated (if applicable)
 - [ ] No `.env` or secrets committed
 - [ ] PR references the issue (`Closes #123`)
@@ -121,10 +105,18 @@ Before submitting, confirm:
 
 ## 🧪 Testing
 
+Tests use [Vitest](https://vitest.dev). Run them with:
+
+```bash
+npm test         # run once
+npm run test:watch   # watch mode (if configured)
+```
+
 When writing tests:
 
 - Place them in `tests/` mirroring the `src/` structure
 - Use descriptive names: `should submit transaction when threshold is met`
+- Mock external dependencies (Stellar SDK, database) — see `tests/multisig.service.test.ts` for examples
 - Prefer unit tests for services; integration tests for routes
 
 ---
@@ -134,9 +126,9 @@ When writing tests:
 1. A maintainer reviews within **24–48 hours**
 2. Reviewers may request changes — respond in the PR thread
 3. Once approved, the PR is merged (usually squash-merged)
-4. Points are credited after the Wave closes
+4. Your contribution is credited in the commit history
 
-> ⚠️ Work on a claimed issue is considered active for **3 days**. No activity = issue may be released.
+> ⚠️ If you claim an issue and go quiet for **3 days**, it may be released to other contributors.
 
 ---
 
@@ -154,7 +146,6 @@ When writing tests:
 
 - **GitHub Issues** — questions about specific tasks
 - **PR Comments** — review feedback
-- **Drips Discord** — Wave-wide questions (`#stellar-wave` channel)
 
 ---
 
@@ -162,7 +153,7 @@ When writing tests:
 
 Be respectful. Follow the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
-Harassment, discrimination, or toxic behavior will result in removal from the Wave.
+Harassment, discrimination, or toxic behavior will not be tolerated.
 
 ---
 
